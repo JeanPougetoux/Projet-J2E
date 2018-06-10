@@ -52,7 +52,7 @@ public class PrintListTasksController {
 		return "listTasks";
 	}
 
-	@RequestMapping(value = "/delete", method = RequestMethod.GET)
+	@RequestMapping(value = "/delete", method = RequestMethod.POST)
 	public String supprimer(@RequestParam(value = "idTask") final Integer pIdTask, final ModelMap pModel) {
 		try {
 			service.deleteTask(pIdTask);

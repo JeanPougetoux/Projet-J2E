@@ -19,7 +19,7 @@
 			<br>
 			<div class="row">
 				<form action="/projet-tasks-esgi/tasks" method="post">
-					Description : <input type="text" name="description"><br>
+					Description : <input type="text" name="description" required><br>
 					<div class="row">
 						<label class="col s3"> <input name="priority" value=1
 							type="radio" checked /> <span>Basse</span>
@@ -44,7 +44,7 @@
 				<form action="/projet-tasks-esgi/tasks/modify" method="post">
 					<input type="hidden" id="idTask" name="idTask" value="" />
 					Description : <input type="text" id="descriptionTask"
-						name="description"><br>
+						name="description" required><br>
 					<div class="row" id="priorityTask">
 						<label class="col s3"> <input id="radio1" name="priority"
 							value=1 type="radio" /> <span>Basse</span>
@@ -125,10 +125,15 @@
 									<td><c:out value="${task.description}" /></td>
 									<td><c:out value="${priority}" /></td>
 									<td><c:out value="${task.creation}" /></td>
-									<td><c:url value="/tasks/delete" var="url">
-											<c:param name="idTask" value="${task.id}" />
-										</c:url> <a href="${url}" class="btn-floating btn-small"><i
-											class="material-icons red">delete</i></a></td>
+									<td><form action="/projet-tasks-esgi/tasks/delete"
+											method="post">
+											<input type="hidden" id="idTask" name="idTask"
+												value="${task.id}" /> <a href="javascript:;"
+												onclick="parentNode.submit();"
+												class="btn-floating btn-small"><i
+												class="material-icons red">delete</i></a>
+										</form></td>
+
 									<td><a class="btn-floating btn-small edit-button"><i
 											class="material-icons blue">mode_edit</i></a></td>
 								</tr>
@@ -147,7 +152,8 @@
 			<li><a class="btn-floating green modal-trigger"
 				href="#modal-task-add"> <i class="large material-icons">add</i>
 			</a></li>
-			<li><a href="#modal-task-urgent" class="btn-floating red modal-trigger"><i class="material-icons">access_time</i></a></li>
+			<li><a href="#modal-task-urgent"
+				class="btn-floating red modal-trigger"><i class="material-icons">access_time</i></a></li>
 		</ul>
 	</div>
 	<script
