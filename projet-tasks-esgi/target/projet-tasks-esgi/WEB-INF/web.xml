@@ -29,7 +29,7 @@
         <url-pattern>/</url-pattern>
     </servlet-mapping>
     
-      <!-- Declaration de l'utilisation de la ressource JDBC -->
+    <!-- Declaration de l'utilisation de la ressource JDBC -->
     <resource-ref>
         <description>Ressource JDBC de l'application</description>
         <res-ref-name>jdbc/base</res-ref-name>

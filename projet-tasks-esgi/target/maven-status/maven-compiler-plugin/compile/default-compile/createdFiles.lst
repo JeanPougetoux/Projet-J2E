@@ -1,1 +1,6 @@
-com\esgi\group9\BonjourController.class
+com\esgi\group9\IListTasksDAO.class
+com\esgi\group9\IServiceListTasks.class
+com\esgi\group9\ServiceListTasks.class
+com\esgi\group9\Task.class
+com\esgi\group9\Task_.class
+com\esgi\group9\ListTasksDAO.class
