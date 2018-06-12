@@ -16,7 +16,7 @@
 			<attribute name="maven.scope" value="compile"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/spyro/.m2/repository/org/springframework/spring-beans/4.0.2.RELEASE/spring-beans-4.0.2.RELEASE.jar">
+	<classpathentry kind="lib" path="C:/Users/spyro/.m2/repository/org/springframework/spring-beans/4.0.2.RELEASE/spring-beans-4.0.2.RELEASE.jar" sourcepath="C:/Users/spyro/.m2/repository/org/springframework/spring-beans/4.0.2.RELEASE/spring-beans-4.0.2.RELEASE-sources.jar">
 		<attributes>
 			<attribute name="maven.pomderived" value="true"/>
 			<attribute name="org.eclipse.jst.component.archivename" value="spring-beans-4.0.2.RELEASE.jar"/>
@@ -27,7 +27,7 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="src" path="/projet-tasks-esgi"/>
-	<classpathentry kind="lib" path="C:/Users/spyro/.m2/repository/org/springframework/spring-context/4.0.2.RELEASE/spring-context-4.0.2.RELEASE.jar">
+	<classpathentry kind="lib" path="C:/Users/spyro/.m2/repository/org/springframework/spring-context/4.0.2.RELEASE/spring-context-4.0.2.RELEASE.jar" sourcepath="C:/Users/spyro/.m2/repository/org/springframework/spring-context/4.0.2.RELEASE/spring-context-4.0.2.RELEASE-sources.jar">
 		<attributes>
 			<attribute name="maven.pomderived" value="true"/>
 			<attribute name="org.eclipse.jst.component.archivename" value="spring-context-4.0.2.RELEASE.jar"/>

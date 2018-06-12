@@ -1,7 +1,7 @@
-C:\Users\spyro\Documents\GitHub\Projet-J2E\projet-tasks-esgi\src\main\java\com\esgi\group9\Task.java
-C:\Users\spyro\Documents\GitHub\Projet-J2E\projet-tasks-esgi\src\main\java\com\esgi\group9\IListTasksDAO.java
-C:\Users\spyro\Documents\GitHub\Projet-J2E\projet-tasks-esgi\src\main\java\com\esgi\group9\ServiceListTasks.java
-C:\Users\spyro\Documents\GitHub\Projet-J2E\projet-tasks-esgi\src\main\java\com\esgi\group9\ListTasksDAO.java
-C:\Users\spyro\Documents\GitHub\Projet-J2E\projet-tasks-esgi\src\main\java\com\esgi\group9\PrintListTasksController.java
-C:\Users\spyro\Documents\GitHub\Projet-J2E\projet-tasks-esgi\src\main\java\com\esgi\group9\IServiceListTasks.java
-C:\Users\spyro\Documents\GitHub\Projet-J2E\projet-tasks-esgi\src\main\java\com\esgi\group9\Task_.java
+C:\Users\spyro\Documents\GitHub\Projet-J2E\projet-tasks-esgi\src\main\java\com\esgi\group9\models\ListTasksDAO.java
+C:\Users\spyro\Documents\GitHub\Projet-J2E\projet-tasks-esgi\src\main\java\com\esgi\group9\controllers\PrintListTasksController.java
+C:\Users\spyro\Documents\GitHub\Projet-J2E\projet-tasks-esgi\src\main\java\com\esgi\group9\models\IListTasksDAO.java
+C:\Users\spyro\Documents\GitHub\Projet-J2E\projet-tasks-esgi\src\main\java\com\esgi\group9\models\IServiceListTasks.java
+C:\Users\spyro\Documents\GitHub\Projet-J2E\projet-tasks-esgi\src\main\java\com\esgi\group9\business\Task.java
+C:\Users\spyro\Documents\GitHub\Projet-J2E\projet-tasks-esgi\src\main\java\com\esgi\group9\business\Task_.java
+C:\Users\spyro\Documents\GitHub\Projet-J2E\projet-tasks-esgi\src\main\java\com\esgi\group9\models\ServiceListTasks.java

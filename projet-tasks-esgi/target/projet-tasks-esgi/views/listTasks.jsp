@@ -10,16 +10,39 @@
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
 	rel="stylesheet">
 <title><spring:message code="titre.listtasks" /></title>
+<style type="text/css">
+.input-field input:focus+label {
+	color: #00bcd4 !important;
+}
 
+.input-field .prefix.active {
+	color: #00bcd4 !important;
+}
+
+.row .input-field input:focus {
+	border-bottom: 1px solid #00bcd4 !important;
+	box-shadow: 0 1px 0 0 #00bcd4 !important
+}
+
+[type="radio"]:checked+span:after, [type="radio"].with-gap:checked+span:after
+	{
+	background-color: #00bcd4;
+}
+</style>
 </head>
 <body class="blue lighten-4">
-	<div id="modal-task-add" class="modal">
+	<div id="modal-task-add" class="modal" style="width: 35% !important;">
 		<div class="modal-content">
 			<h4>Ajout d'une tâche</h4>
 			<br>
 			<div class="row">
 				<form action="/projet-tasks-esgi/tasks" method="post">
-					Description : <input type="text" name="description"><br>
+					<div class="row">
+						<div class="input-field col s12">
+							<input type="text" id="desc" name="description" required>
+							<label for="desc">Description</label>
+						</div>
+					</div>
 					<div class="row">
 						<label class="col s3"> <input name="priority" value=1
 							type="radio" checked /> <span>Basse</span>
@@ -31,20 +54,32 @@
 							type="radio" /> <span>Urgente</span>
 						</label>
 					</div>
-					<input type="submit" value="Submit">
+					<div class="row">
+						<div class="col m12">
+							<p class="right-align">
+								<button
+									class="btn btn-large waves-effect waves-light btn-small blue lighten-1"
+									type="submit">Valider</button>
+							</p>
+						</div>
+					</div>
 				</form>
 			</div>
 		</div>
 	</div>
-	<div id="modal-task-edit" class="modal">
+	<div id="modal-task-edit" class="modal" style="width: 35% !important;">
 		<div class="modal-content">
 			<h4>Modification d'une tâche</h4>
 			<br>
 			<div class="row">
 				<form action="/projet-tasks-esgi/tasks/modify" method="post">
 					<input type="hidden" id="idTask" name="idTask" value="" />
-					Description : <input type="text" id="descriptionTask"
-						name="description"><br>
+					<div class="row">
+						<div class="input-field col s12">
+							<input type="text" id="descriptionTask" name="description"
+								required> <label for="descriptionTask">Description</label>
+						</div>
+					</div>
 					<div class="row" id="priorityTask">
 						<label class="col s3"> <input id="radio1" name="priority"
 							value=1 type="radio" /> <span>Basse</span>
@@ -56,7 +91,15 @@
 							value=4 type="radio" /> <span>Urgente</span>
 						</label>
 					</div>
-					<input type="submit" value="Submit">
+					<div class="row">
+						<div class="col m12">
+							<p class="right-align">
+								<button
+									class="btn btn-large waves-effect waves-light btn-small blue lighten-1"
+									type="submit">Valider</button>
+							</p>
+						</div>
+					</div>
 				</form>
 			</div>
 		</div>
